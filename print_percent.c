@@ -6,7 +6,7 @@
  * Return: 1
  */
 
-int print_100(va_list valley)
+int print_percent(va_list valley)
 {
 	(void)valley;
 	_putchar('%');
