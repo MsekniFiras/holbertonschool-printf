@@ -12,11 +12,11 @@ int (*get_function(const char *C))(va_list)
 {
 	int i;
 		holberton_t types[] = {
-			{"s", print_s},
-			{"c", print_c},
-			{"d", print_d},
-			{"i", print_i},
-			{"%", print_100},
+			{"s", print_string},
+			{"c", print_character},
+			{"d", print_decimal},
+			{"i", print_integer},
+			{"%", print_percent},
 			{NULL, NULL},
 		};
 		for (i = 0; types[i].X; i++)
