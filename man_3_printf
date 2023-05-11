@@ -1,0 +1,37 @@
+.TH printf 3 "MAY 2023"
+
+.SH NAME
+_printf - formatted output conversion function
+
+.SH SYNOPSIS
+#include "main.h"
+int _printf(const char *format, ...);
+
+.SH DESCRIPTION
+The _printf function is a variadic function that prints its arguments according to the format
+specified in the format string. The function returns the number of characters printed on success,
+and a negative number on failure.
+
+The format string may contain conversion specifiers that start with the % character,
+which are replaced by the values of the corresponding arguments.
+
+The following conversion specifiers are supported:
+\fB%d\fP, \fB%i\fP - prints a decimal integer
+\fB%c\fP - prints a single character
+\fB%s\fP - prints a string of characters
+\fB%%\fP - prints a literal % character
+
+.SH RETURN VALUE
+The _printf function returns the number of characters printed (excluding the null byte used to end the output to strings).
+
+If an error occurs, -1 is returned.
+
+.SH EXAMPLES
+Print a string: _printf("Hello, world!\n");
+Print an integer: _printf("%d\n", 42);
+
+.SH AUTHOR
+Written by Firas Msekni.
+
+.SH SEE ALSO
+printf(3)
